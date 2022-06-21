@@ -3,7 +3,9 @@ class LoginPage {
     get inputUsername() { return $('#user-name') };;
     get inputPassword() { return $('#password') };
     get btnLogin() { return $('#login-button') };
-    get errorContainer() { return $('.error-message-container.error') };
+    get errorContainer() { return $('#login_button_container > div > form > div.error-message-container') };
+    get burgerButton() { return $('#react-burger-menu-btn') };
+    get logoutButton() { return $('#logout_sidebar_link') };
 
 // Setters
     async setUsername(username) {
@@ -20,4 +22,4 @@ class LoginPage {
         await this.btnLogin.click();
     };
 };
-export default new LoginPage();
+module.exports = new LoginPage();
