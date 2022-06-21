@@ -21,7 +21,14 @@ exports.config = {
     // will be called from there.
     //
     specs: [
-        './test/specs/**/*.js'
+        ['./test/specs/login.spec.js'],
+        ['./test/specs/inventory.spec.js'],
+        ['./test/specs/itemDescription.spec.js'],
+        ['./test/specs/cart.spec.js'],
+        ['./test/specs/firstCheckout.spec.js'],
+        ['./test/specs/secondCheckout.spec.js'],
+        ['./test/specs/completeOrder.spec.js'],
+        ['/test/specs/user.e2e.spec.js']
     ],
     // Patterns to exclude.
     exclude: [

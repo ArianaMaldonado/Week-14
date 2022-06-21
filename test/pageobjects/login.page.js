@@ -14,7 +14,6 @@ class LoginPage {
     async setPassword(password) {
         await this.inputPassword.setValue(password);
     };
-
 // Methods
     async login (username, password) {
         await this.inputUsername.setValue(username);
