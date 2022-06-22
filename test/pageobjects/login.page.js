@@ -20,5 +20,8 @@ class LoginPage {
         await this.inputPassword.setValue(password);
         await this.btnLogin.click();
     };
+    async open() {
+        browser.url('http://www.saucedemo.com/');
+    };
 };
 module.exports = new LoginPage();
