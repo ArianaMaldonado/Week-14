@@ -18,3 +18,5 @@ class SecondCheckout {
         await this.finishBtn.click();
     };
 };
+
+module.exports = new SecondCheckout();
