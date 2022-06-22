@@ -27,9 +27,8 @@ exports.config = {
         ['./test/specs/cart.spec.js'],
         ['./test/specs/firstCheckout.spec.js'],
         ['./test/specs/secondCheckout.spec.js'],
-        ['./test/specs/completeOrder.spec.js'],
-        ['/test/specs/user.e2e.spec.js']
-    ],
+        ['./test/specs/completeOrder.spec.js']
+        ],
     // Patterns to exclude.
     exclude: [
         // 'path/to/excluded/files'
