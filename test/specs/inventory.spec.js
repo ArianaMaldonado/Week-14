@@ -26,7 +26,6 @@ describe('Inventory page test', () => {
             await expect(Header.aboutSidebar).toExist();
             await expect(Header.aboutSidebar).toBeClickable();
             await Header.aboutSidebar.click();
-            await browser.pause(1000);
             await expect(browser).toHaveUrl('https://saucelabs.com/');
         });
         it('Testing sidebar: Logout', async () => {

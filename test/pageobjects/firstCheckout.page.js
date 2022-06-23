@@ -6,7 +6,7 @@ class firstCheckoutPage {
     get btnContinue() { return $('#continue') };
     get btnCancel() { return $('#cancel') };
     get errorContainer() { return $('#checkout_info_container > div > form > div.checkout_info > div.error-message-container.error') };
-    get crossBtnError() { return $('#checkout_info_container > div > form > div.checkout_info > div.error-message-container.error > h3 > button > h3 > button > svg') };
+    get crossBtnError() { return $('div.error-message-container.error > h3 > button > svg') };
     get errorData() { return $('#checkout_info_container > div > form > div.checkout_info > div.error-message-container.error > h3') };
     get title() { return $('#header_container > div.header_secondary_container > span') };
 
