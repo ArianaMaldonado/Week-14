@@ -7,11 +7,8 @@ class CompleteOrder {
     get backHomeBtn() { return $('#back-to-products') };
 
     //Methods
-    async buttonClick () {
-        await this.backHomeBtn.click();
-    };
     async imgAtributte () {
-        await this.orderImg.getAttribute(src);
+        await this.orderImg.getAtributte();
     };
 };
 
