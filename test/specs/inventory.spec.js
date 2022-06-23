@@ -162,22 +162,22 @@ describe('Inventory page test', () => {
     });
     describe('Testing description', () => {
         it('First item description to exists', async () => {
-            await InventoryPage.firstDescription.toExist();
+            await expect(InventoryPage.firstDescription).toExist();
         });
         it('Second item description to exists', async () => {
-            await InventoryPage.secondDescription.toExist();
+            await expect(InventoryPage.secondDescription).toExist();
         });
         it('Third item description to exists', async () => {
-            await InventoryPage.thirdDescription.toExist();
+            await expect(InventoryPage.thirdDescription).toExist();
         });
         it('Fourth item description to exists', async () => {
-            await InventoryPage.fourthDescription.toExist();
+            await expect(InventoryPage.fourthDescription).toExist();
         });
         it('Fifth item description to exists', async () => {
-            await InventoryPage.fifthDescription.toExist();
+            await expect(InventoryPage.fifthDescription).toExist();
         });
         it('Sixth item description to exists', async () => {
-            await InventoryPage.sixthDescription.toExist();
+            await expect(InventoryPage.sixthDescription).toExist();
         });
     });
 });

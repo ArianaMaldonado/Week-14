@@ -43,7 +43,8 @@ class InventoryPage {
     get sixthItemName() { return $('#item_3_title_link > div') };
     get sixthDescription() { return $('#inventory_container > div > div:nth-child(6) > div.inventory_item_description > div.inventory_item_label > div') };
     get sixthAdd() { return $('#add-to-cart-test\.allthethings\(\)-t-shirt-\(red\)') };
-    get sixthRemove() { return $('#remove-test.allthings()-t-shirt-(red)') };
+    get sixthRemove() { return $('#remove-test\.allthethings\(\)-t-shirt-\(red\)') };
+    
 
     get backBtn() { return $('#back-to-products') };
 
@@ -91,6 +92,9 @@ class InventoryPage {
 
     async backBtnClick() {
         await this.backBtn.click();
+    };
+    async openInventory() {
+        browser.url('https://www.saucedemo.com/inventory.html');
     };
 };
 

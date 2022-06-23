@@ -17,17 +17,19 @@ describe('Cart testing', () => {
     });
 
     describe('Cart items', () => {
-        beforeEach('Add an item to the cart', () => {
-            InventoryPage.firstAdd.click()
-        });
+        // beforeEach('Add an item to the cart', () => {
+        //     InventoryPage.firstAdd.click();
+        // });
         it('Cart title exists', async () => {
             await Header.cartBtn.click();
             await expect(CartPage.cartTitle).toExist();
         });
         it('Cart has items', async () => {
+            browser.url('https://www.saucedemo.com/inventory.html');
+            await InventoryPage.firstAdd.click();
             await Header.cartBtn.click();
             await expect(CartPage.cartItem).toExist();
-            await expect(CartPage.priceItem).toBeChecked();
+            await expect(CartPage.priceItem).toExist();
             await expect(CartPage.priceItem).toExist();
         });
     });
