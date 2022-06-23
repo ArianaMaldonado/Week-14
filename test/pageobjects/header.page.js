@@ -11,17 +11,6 @@ class Header {
     get cartBtn() { return $('#shopping_cart_container > a') };
 
     //Methods
-    async clickMenu () {
-        await this.headerLogo.click();
-        await this.burgerBtn.click();
-        await this.sidebar.click();
-        await this.allItemsSidebar.click();
-        await this.aboutSidebar.click();
-        await this.logoutSidebar.click();
-        await this.resetAppStateSidebar.click();
-        await this.closeSidebar.click();
-        await this.cartBtn.click();
-    };
 };
 
 module.exports = new Header();
